@@ -1,0 +1,39 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 26, 2019 at 04:49:50 IST
+irun
+	-access +rwc
+	events.sv
+Recompiling... reason: file './events.sv' is newer than expected.
+	expected: Tue Feb 26 04:48:37 2019
+	actual:   Tue Feb 26 04:49:46 2019
+file: events.sv
+	module worklib.test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		test
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:sv <0x360c6535>
+			streams:   2, words:  4237
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		         Instances  Unique
+		Modules:         1       1
+		Named events:    1       1
+		Initial blocks:  2       2
+	Writing initial simulation snapshot: worklib.test:sv
+Loading snapshot worklib.test:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+about to drive ctrl after 10 time units
+about to drive data
+ctrl is driven at time =                  10
+data is driven at time =                  10
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 26, 2019 at 04:49:50 IST  (total: 00:00:00)
